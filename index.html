@@ -1,0 +1,77 @@
+<!doctype html>
+    <html lang="es">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio — Manuel</title>
+    <meta name="description" content="Portafolio de proyectos y experiencia de Manuel" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+    :root { --accent: #0d6efd; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .hero {
+    background: linear-gradient(180deg, rgba(13,110,253,.08), transparent 60%);
+    padding: 6rem 0 3rem;
+    }
+    .tag { font-size: .85rem; padding: .25rem .5rem; border-radius: .5rem; background: rgba(13,110,253,.12); color: var(--accent); }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+    .card-img-top { object-fit: cover; height: 180px; }
+    footer a { text-decoration: none; }
+    </style>
+    </head>
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">Manuel Cruces</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <header id="inicio" class="hero">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="tag">Desarrollador Full Stack • Laravel • WordPress • PHP</span>
+                    <h1 class="display-5 fw-bold mt-3">Hola, soy Manuel 👋</h1>
+                    <p class="lead text-secondary">Ingeniero en computación e informática. Construyo sitios y aplicaciones con Laravel, WordPress, ACF y Bootstrap. Aquí encontrarás mis proyectos, experiencia y formas de contacto.</p>
+                    <div class="d-flex gap-2">
+                        <a class="btn btn-primary btn-lg" href="#contacto">Contáctame</a>
+                        <a class="btn btn-outline-primary btn-lg" href="#proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card shadow-soft">
+                        <div class="card-body">
+                            <h2 class="h5">Últimos logros</h2>
+                            <ul class="mb-0 small text-secondary">
+                            <li>Dashboard en Laravel 11</li>
+                            <li>Bloques ACF personalizados (webinars, noticias)</li>
+                            <li>Banner con slides (ACF repeater)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-5">
+</html>
