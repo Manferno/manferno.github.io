@@ -1,0 +1,22 @@
+
+    :root {
+      --bg: #0A192F;
+      --accent: #64FFDA;
+      --text: #8892B0;
+      --white: #ffffff;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif; color: var(--white); }
+    a { color: var(--accent); }
+    .navbar { background: rgba(10,25,47,0.95)!important; }
+    .nav-link { color: var(--white)!important; }
+    .nav-link:hover { color: var(--accent)!important; }
+    .btn-primary { background: var(--accent); border: none; color: var(--bg); }
+    .btn-outline-primary { border-color: var(--accent); color: var(--accent); }
+    .btn-outline-primary:hover { background: var(--accent); color: var(--bg); }
+    .hero { padding: 7rem 0 4rem; }
+    .card { background: #112240; border: none; color: var(--text); }
+    .card h3 { color: var(--white); }
+    .card-img-top { object-fit: cover; height: 180px; }
+    .badge { background: rgba(100,255,218,.1); color: var(--accent); }
+    footer { background: #0A192F; color: var(--text); }

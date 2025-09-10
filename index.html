@@ -1,77 +1,168 @@
 <!doctype html>
-    <html lang="es">
-    <head>
+<html lang="es">
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio — Manuel</title>
-    <meta name="description" content="Portafolio de proyectos y experiencia de Manuel" />
+    <title>Manuel — Full Stack Developer</title>
+    <meta name="description" content="Portafolio de Manuel, Full Stack Developer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-    :root { --accent: #0d6efd; }
-    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; }
-    html { scroll-behavior: smooth; }
-    .hero {
-    background: linear-gradient(180deg, rgba(13,110,253,.08), transparent 60%);
-    padding: 6rem 0 3rem;
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#inicio">Manuel — Full Stack Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link lang" data-key="projects" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link lang" data-key="about" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link lang" data-key="contact" href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="btn btn-sm btn-outline-primary ms-3" onclick="toggleLang()">EN/ES</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="inicio" class="hero">
+    <div class="container text-center">
+      <h1 id="hero-title" class="display-4 fw-bold">Hola, soy Manuel 👋</h1>
+      <p id="role" class="lead">Full Stack Developer</p>
+      <p class="mt-3">Construyo aplicaciones modernas con <span class="fw-bold text-white">Laravel, React y WordPress</span>.</p>
+      <div class="d-flex justify-content-center gap-2 mt-4">
+        <a class="btn btn-primary btn-lg" href="#contacto">Contáctame</a>
+        <a class="btn btn-outline-primary btn-lg" href="#proyectos">Ver proyectos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center lang" data-key="projects">Proyectos destacados</h2>
+      <div class="row g-4">
+        <!-- Proyecto Laravel + React -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://picsum.photos/seed/laravelreact/800/400" alt="Proyecto E-learning">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5">Plataforma E-learning</h3>
+              <p class="small">Aplicación full stack con Laravel API + React SPA. Manejo de usuarios, pagos con Stripe y dashboard administrativo.</p>
+              <div class="mt-auto d-flex gap-2">
+                <span class="badge">Laravel</span>
+                <span class="badge">React</span>
+                <span class="badge">REST API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto WordPress -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://picsum.photos/seed/wp/800/400" alt="E-commerce WordPress">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5">E-commerce WordPress</h3>
+              <p class="small">Tienda online con WooCommerce + ACF, optimizada para SEO y con integración de pasarela de pago.</p>
+              <div class="mt-auto d-flex gap-2">
+                <span class="badge">WordPress</span>
+                <span class="badge">ACF</span>
+                <span class="badge">WooCommerce</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto Portfolio -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://picsum.photos/seed/portfolio/800/400" alt="Portfolio Dev">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5">Portafolio Developer</h3>
+              <p class="small">Landing multi-idioma con Bootstrap.</p>
+              <div class="mt-auto d-flex gap-2">
+                <span class="badge">Bootstrap</span>
+                <span class="badge">HTML</span>
+                <span class="badge">GitHub Pages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold lang" data-key="about">Sobre mí</h2>
+      <p class="mt-3">
+        Ingeniero en Computación e Informática y <span class="text-white">Desarrollador Full-Stack</span> con experiencia en <span class="fw-bold text-white">desarrollo web</span>,
+        soporte técnico y gestión de proyectos en sectores como <span class="fw-bold text-white">educación</span>, <span class="fw-bold text-white">retail</span>, <span class="fw-bold text-white">inmobiliario</span> y <span class="fw-bold text-white">financiero</span>.
+        Especializado en <span class="fw-bold text-white">PHP</span>, <span class="fw-bold text-white">Laravel</span> y <span class="fw-bold text-white">WordPress</span>, con capacidad comprobada para diseñar y desplegar plataformas
+        personalizadas. Más de <span class="fw-bold text-white">10 sistemas y sitios web</span> desarrollados para empresas e instituciones.
+        Mejora del rendimiento y eficiencia de plataformas mediante <span class="fw-bold text-white">optimización SEO/WPO</span> y <span class="fw-bold text-white">soluciones tecnológicas a medida</span>.
+        Experiencia en la <span class="fw-bold text-white">gestión de infraestructura TI</span> y apoyo a la <span class="fw-bold text-white">adopción tecnológica</span> en entornos académicos.
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold lang" data-key="contact">Contacto</h2>
+      <p class="mb-4">¿Te interesa colaborar? Escríbeme o revisa mis perfiles.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a class="btn btn-primary" href="mailto:manuel.rcb.mc@gmail.com">Email</a>
+        <a class="btn btn-outline-primary" href="https://github.com/manferno" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/manuel-cruces-7943651a5/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 border-top border-secondary">
+    <div class="container small d-flex justify-content-between">
+      <span>© <span id="year"></span> Manuel — Full Stack Developer</span>
+      <a href="#inicio">↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const translations = {
+      es: {
+        projects: "Proyectos",
+        about: "Sobre mí",
+        contact: "Contacto",
+        hero: "Hola, soy Manuel 👋",
+        role: "Full Stack Developer"
+      },
+      en: {
+        projects: "Projects",
+        about: "About Me",
+        contact: "Contact",
+        hero: "Hi, I'm Manuel 👋",
+        role: "Full Stack Developer"
+
+      }
+    };
+    let lang = "es";
+    function toggleLang() {
+      lang = lang === "es" ? "en" : "es";
+      document.querySelectorAll(".lang").forEach(el => {
+        const key = el.dataset.key;
+        el.textContent = translations[lang][key];
+      });
+      document.getElementById("hero-title").textContent = translations[lang].hero;
+      document.getElementById("role").textContent = translations[lang].role;
     }
-    .tag { font-size: .85rem; padding: .25rem .5rem; border-radius: .5rem; background: rgba(13,110,253,.12); color: var(--accent); }
-    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.06); }
-    .card-img-top { object-fit: cover; height: 180px; }
-    footer a { text-decoration: none; }
-    </style>
-    </head>
-    <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#inicio">Manuel Cruces</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- Hero -->
-    <header id="inicio" class="hero">
-        <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-7">
-                    <span class="tag">Desarrollador Full Stack • Laravel • WordPress • PHP</span>
-                    <h1 class="display-5 fw-bold mt-3">Hola, soy Manuel 👋</h1>
-                    <p class="lead text-secondary">Ingeniero en computación e informática. Construyo sitios y aplicaciones con Laravel, WordPress, ACF y Bootstrap. Aquí encontrarás mis proyectos, experiencia y formas de contacto.</p>
-                    <div class="d-flex gap-2">
-                        <a class="btn btn-primary btn-lg" href="#contacto">Contáctame</a>
-                        <a class="btn btn-outline-primary btn-lg" href="#proyectos">Ver proyectos</a>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card shadow-soft">
-                        <div class="card-body">
-                            <h2 class="h5">Últimos logros</h2>
-                            <ul class="mb-0 small text-secondary">
-                            <li>Dashboard en Laravel 11</li>
-                            <li>Bloques ACF personalizados (webinars, noticias)</li>
-                            <li>Banner con slides (ACF repeater)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <!-- Proyectos -->
-    <section id="proyectos" class="py-5">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
